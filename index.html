@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <title>Monster Slayer</title>
+    <meta name="description" content="Mini game development using Vue.JS CDN">
+    <meta name="autor" content="José Monte">
+    <meta name="keywords" content="vue, javascript, game, jose, monte">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/vue.js"></script>
+</head>
+<body>
+    <main id="app">
+        <section v-if="game.new" class="panel menu">
+            <h1>Monster Slayer</h1>
+            
+            <div class="input">
+                <label>
+                    <small>Type a name to your character</small>
+                </label>
+                <input type="text" v-model="name" :class="{ error }" placeholder="Type your username here">
+                <span v-if="error" class="legend-error"><small>Please, first type a name to your character!</small></span>
+            </div>
+            
+            <h3>So, choose you character!</h3>
+            <div class="choose-char">
+                <div v-for="(character, index) in characters" :key="index" 
+                    @click="setPlayer(character)"
+                    class="choose-char-card">
+                    <img :src="character.avatar" alt="">
+                    <h5 class="char-name">{{ character.race }}</h5>
+                </div>
+            </div>
+
+            <div class="menu-footer">
+                <p><a href="https://github.com/jmontejr/monster-slayer">Monster Slayer</a> by 
+                <a href="https://jmontejr.github.io">José Monte</a>, {{ year }}</p>
+            </div>
+        </section>
+
+        <template v-else>
+            <section class="panel stats">
+                <div class="character-stats">
+                    <h3>{{ player.name }}</h3>
+                    <p>Race: {{ player.race }}</p>
+                    <p>Level: {{ player.level }}</p>
+                    <p>Exp: {{ player.experience.min }} / {{ player.experience.max }}</p>
+                    <p>Coins: {{ player.coins }}</p>
+                </div>
+                
+                <div class="character-stats">
+                    <h3>{{ monster.name }}</h3>
+                    <p>Difficulty: {{ monster.difficulty }}</p>
+                </div>
+            </section>
+
+            <section class="panel scores">
+                <div class="score">
+                    <figure class="avatar">
+                        <img :src="player.avatar" alt="player avatar">
+                    </figure>
+                    <h1>{{ player.name }}</h1>
+                    <div class="life-bar">
+                        <div class="life" 
+                            :class="{danger: player.life < 20}"
+                            :style="{width: player.life + '%'}"></div>
+                    </div>
+                    <div>{{ player.life }}%</div>
+                </div>
+
+                <div class="score">
+                    <figure class="avatar">
+                        <img :src="monster.avatar" alt="monster avatar">
+                    </figure>
+                    <h1>{{ monster.name }}</h1>
+                    <div class="life-bar">
+                        <div class="life" 
+                            :class="{danger: monster.life < 20}"
+                            :style="{width: monster.life + '%'}"></div>
+                    </div>
+                    <div>{{ monster.life }}%</div>
+                </div>
+            </section>
+    
+            <section v-if="hasResult" class="panel result">
+                <div v-if="monster.life == 0" class="win">
+                    <template v-if="game.level == monsters.length">
+                        <img src="assets/images/trophy.png" alt="tropy image">
+                        <p>Congratulatios!!!</p>
+                        <p class="dropped">
+                            <small>You finally saved the world from monsters!</small>
+                        </p>
+                    </template>
+                    <p v-else>You win!!!</p>
+                    <p class="dropped">
+                        You got {{ dropped.coins }} coins and {{ dropped.exp }} exp!
+                    </p>
+                </div>
+                <div v-else class="lose">
+                    <img src="assets/images/gravestone.png" alt="gravestone image">
+                    <p>You lose!!!</p>
+                </div>
+            </section>
+    
+            <section class="panel buttons">
+                <template v-if="running">
+                    <div @click="attack(false)">
+                        <img class="btn-icon" src="assets/images/sword.png" alt="">
+                        <button class="btn attack">Attack</button>
+                    </div>
+                    <div @click="attack(true)">
+                        <img class="btn-icon" src="assets/images/comet.png" alt="">
+                        <button class="btn special-attack">Special</button>
+                    </div>
+                    <div @click="healAndHurt()">
+                        <img class="btn-icon" src="assets/images/potion.png" alt="">
+                        <button class="btn heal">Heal</button>
+                    </div>
+                    <div @click="running = false, game.nextLevel = false">
+                        <img class="btn-icon" src="assets/images/running.png" alt="">
+                        <button class="btn give-up">Give up</button>
+                    </div>
+                </template>
+
+                <template v-else>
+                    <div @click="startGame">
+                        <img class="btn-icon" src="assets/images/swords.png" alt="">
+                        <button class="btn start-game">
+                            {{ !game.nextLevel ? 'Start Journey' : 'Next Challenge' }}
+                        </button>
+                    </div>
+                </template>
+            </section>
+    
+            <section v-if="logs.length > 0" class="panel logs">
+                <ul>
+                    <li v-for="(log, index) in logs" 
+                    :key="index" class="log" 
+                    :class="log.cls">{{ log.text }}</li>
+                </ul>
+            </section>
+
+        </template>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

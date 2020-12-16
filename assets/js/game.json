@@ -1,0 +1,390 @@
+{
+    "characters": [
+        {
+            "race": "Amazon",
+            "avatar": "assets/images/amazon.png",
+            "skills": {
+                "power": 1,
+                "special": 1
+            }
+        },
+        {
+            "race": "Dwarf",
+            "avatar": "assets/images/dwarf.png",
+            "skills": {
+                "power": 1,
+                "special": 1
+            }
+        },
+        {
+            "race": "Elf",
+            "avatar": "assets/images/elf.png",
+            "skills": {
+                "power": 1,
+                "special": 1
+            }
+        },
+        {
+            "race": "Human",
+            "avatar": "assets/images/human.png",
+            "skills": {
+                "power": 1,
+                "special": 1
+            }
+        },
+        {
+            "race": "Hunter",
+            "avatar": "assets/images/hunter.png",
+            "skills": {
+                "power": 1,
+                "special": 1
+            }
+        },
+        {
+            "race": "Mage",
+            "avatar": "assets/images/mage.png",
+            "skills": {
+                "power": 1,
+                "special": 1
+            }
+        },
+        {
+            "race": "Winged",
+            "avatar": "assets/images/winged.png",
+            "skills": {
+                "power": 1,
+                "special": 1
+            }
+        },
+        {
+            "race": "Wizard",
+            "avatar": "assets/images/wizard.png",
+            "skills": {
+                "power": 1,
+                "special": 1
+            }
+        }
+    ],
+    "monsters": [
+        {
+            "name": "Zombie",
+            "life": 100,
+            "difficulty": 1,
+            "avatar": "assets/images/zombie.png",
+            "drop": {
+                "reward": {
+                    "min": 5,
+                    "max": 10
+                },
+                "experience": {
+                    "min": 3,
+                    "max": 5
+                }
+            }
+        },
+        {
+            "name": "Goblin",
+            "life": 100,
+            "difficulty": 2,
+            "avatar": "assets/images/goblin.png",
+            "drop": {
+                "reward": {
+                    "min": 10,
+                    "max": 15
+                },
+                "experience": {
+                    "min": 5,
+                    "max": 7
+                }
+            }
+        },
+        {
+            "name": "Ghost",
+            "life": 100,
+            "difficulty": 3,
+            "avatar": "assets/images/ghost.png",
+            "drop": {
+                "reward": {
+                    "min": 15,
+                    "max": 20
+                },
+                "experience": {
+                    "min": 7,
+                    "max": 9
+                }
+            }
+        },
+        {
+            "name": "Thing",
+            "life": 100,
+            "difficulty": 4,
+            "avatar": "assets/images/thing.png",
+            "drop": {
+                "reward": {
+                    "min": 20,
+                    "max": 25
+                },
+                "experience": {
+                    "min": 9,
+                    "max": 11
+                }
+            }
+        },
+        {
+            "name": "Tree",
+            "life": 100,
+            "difficulty": 5,
+            "avatar": "assets/images/tree.png",
+            "drop": {
+                "reward": {
+                    "min": 20,
+                    "max": 25
+                },
+                "experience": {
+                    "min": 11,
+                    "max": 13
+                }
+            }
+        },
+        {
+            "name": "Orc",
+            "life": 100,
+            "difficulty": 6,
+            "avatar": "assets/images/orc.png",
+            "drop": {
+                "reward": {
+                    "min": 30,
+                    "max": 35
+                },
+                "experience": {
+                    "min": 13,
+                    "max": 15
+                }
+            }
+        },
+        {
+            "name": "Ogre",
+            "life": 100,
+            "difficulty": 7,
+            "avatar": "assets/images/ogre.png",
+            "drop": {
+                "reward": {
+                    "min": 30,
+                    "max": 35
+                },
+                "experience": {
+                    "min": 15,
+                    "max": 17
+                }
+            }
+        },
+        {
+            "name": "Golem",
+            "life": 100,
+            "difficulty": 7,
+            "avatar": "assets/images/golem.png",
+            "drop": {
+                "reward": {
+                    "min": 30,
+                    "max": 35
+                },
+                "experience": {
+                    "min": 17,
+                    "max": 19
+                }
+            }
+        },
+        {
+            "name": "Minotaur",
+            "life": 100,
+            "difficulty": 8,
+            "avatar": "assets/images/minotaur.png",
+            "drop": {
+                "reward": {
+                    "min": 40,
+                    "max": 45
+                },
+                "experience": {
+                    "min": 19,
+                    "max": 21
+                }
+            }
+        },
+        {
+            "name": "Werewolf",
+            "life": 100,
+            "difficulty": 9,
+            "avatar": "assets/images/werewolf.png",
+            "drop": {
+                "reward": {
+                    "min": 40,
+                    "max": 45
+                },
+                "experience": {
+                    "min": 21,
+                    "max": 23
+                }
+            }
+        },
+        {
+            "name": "Centaur",
+            "life": 100,
+            "difficulty": 10,
+            "avatar": "assets/images/centaur.png",
+            "drop": {
+                "reward": {
+                    "min": 40,
+                    "max": 45
+                },
+                "experience": {
+                    "min": 23,
+                    "max": 25
+                }
+            }
+        },
+        {
+            "name": "Echidna",
+            "life": 100,
+            "difficulty": 11,
+            "avatar": "assets/images/echidna.png",
+            "drop": {
+                "reward": {
+                    "min": 40,
+                    "max": 45
+                },
+                "experience": {
+                    "min": 25,
+                    "max": 27
+                }
+            }
+        },
+        {
+            "name": "Griffin",
+            "life": 100,
+            "difficulty": 12,
+            "avatar": "assets/images/griffin.png",
+            "drop": {
+                "reward": {
+                    "min": 45,
+                    "max": 50
+                },
+                "experience": {
+                    "min": 27,
+                    "max": 29
+                }
+            }
+        },
+        {
+            "name": "Cyclops",
+            "life": 100,
+            "difficulty": 13,
+            "avatar": "assets/images/cyclops.png",
+            "drop": {
+                "reward": {
+                    "min": 50,
+                    "max": 55
+                },
+                "experience": {
+                    "min": 29,
+                    "max": 31
+                }
+            }
+        },
+        {
+            "name": "Giant",
+            "life": 100,
+            "difficulty": 14,
+            "avatar": "assets/images/giant.png",
+            "drop": {
+                "reward": {
+                    "min": 50,
+                    "max": 55
+                },
+                "experience": {
+                    "min": 31,
+                    "max": 33
+                }
+            }
+        },
+        {
+            "name": "Chimera",
+            "life": 100,
+            "difficulty": 15,
+            "avatar": "assets/images/chimera.png",
+            "drop": {
+                "reward": {
+                    "min": 60,
+                    "max": 70
+                },
+                "experience": {
+                    "min": 35,
+                    "max": 37
+                }
+            }
+        },
+        {
+            "name": "Cerberus",
+            "life": 100,
+            "difficulty": 16,
+            "avatar": "assets/images/cerberus.png",
+            "drop": {
+                "reward": {
+                    "min": 60,
+                    "max": 70
+                },
+                "experience": {
+                    "min": 37,
+                    "max": 39
+                }
+            }
+        },
+        {
+            "name": "Dragon",
+            "life": 100,
+            "difficulty": 17,
+            "avatar": "assets/images/dragon.png",
+            "drop": {
+                "reward": {
+                    "min": 70,
+                    "max": 80
+                },
+                "experience": {
+                    "min": 40,
+                    "max": 50
+                }
+            }
+        },
+        {
+            "name": "Vampire",
+            "life": 100,
+            "difficulty": 18,
+            "avatar": "assets/images/vampire.png",
+            "drop": {
+                "reward": {
+                    "min": 80,
+                    "max": 100
+                },
+                "experience": {
+                    "min": 50,
+                    "max": 60
+                }
+            }
+        },
+        {
+            "name": "Necromante",
+            "life": 100,
+            "difficulty": 19,
+            "avatar": "assets/images/necromante.png",
+            "drop": {
+                "reward": {
+                    "min": 100,
+                    "max": 150
+                },
+                "experience": {
+                    "min": 60,
+                    "max": 80
+                }
+            }
+        }
+    ]
+}
