@@ -181,7 +181,7 @@
         {
             "name": "Golem",
             "life": 100,
-            "difficulty": 7,
+            "difficulty": 8,
             "avatar": "assets/images/golem.png",
             "drop": {
                 "reward": {
@@ -197,7 +197,7 @@
         {
             "name": "Minotaur",
             "life": 100,
-            "difficulty": 8,
+            "difficulty": 9,
             "avatar": "assets/images/minotaur.png",
             "drop": {
                 "reward": {
@@ -213,7 +213,7 @@
         {
             "name": "Werewolf",
             "life": 100,
-            "difficulty": 9,
+            "difficulty": 10,
             "avatar": "assets/images/werewolf.png",
             "drop": {
                 "reward": {
@@ -229,7 +229,7 @@
         {
             "name": "Centaur",
             "life": 100,
-            "difficulty": 10,
+            "difficulty": 11,
             "avatar": "assets/images/centaur.png",
             "drop": {
                 "reward": {
@@ -245,7 +245,7 @@
         {
             "name": "Echidna",
             "life": 100,
-            "difficulty": 11,
+            "difficulty": 12,
             "avatar": "assets/images/echidna.png",
             "drop": {
                 "reward": {
@@ -261,7 +261,7 @@
         {
             "name": "Griffin",
             "life": 100,
-            "difficulty": 12,
+            "difficulty": 13,
             "avatar": "assets/images/griffin.png",
             "drop": {
                 "reward": {
@@ -277,7 +277,7 @@
         {
             "name": "Cyclops",
             "life": 100,
-            "difficulty": 13,
+            "difficulty": 14,
             "avatar": "assets/images/cyclops.png",
             "drop": {
                 "reward": {
@@ -293,7 +293,7 @@
         {
             "name": "Giant",
             "life": 100,
-            "difficulty": 14,
+            "difficulty": 15,
             "avatar": "assets/images/giant.png",
             "drop": {
                 "reward": {
@@ -309,7 +309,7 @@
         {
             "name": "Chimera",
             "life": 100,
-            "difficulty": 15,
+            "difficulty": 16,
             "avatar": "assets/images/chimera.png",
             "drop": {
                 "reward": {
@@ -325,7 +325,7 @@
         {
             "name": "Cerberus",
             "life": 100,
-            "difficulty": 16,
+            "difficulty": 17,
             "avatar": "assets/images/cerberus.png",
             "drop": {
                 "reward": {
@@ -341,7 +341,7 @@
         {
             "name": "Dragon",
             "life": 100,
-            "difficulty": 17,
+            "difficulty": 18,
             "avatar": "assets/images/dragon.png",
             "drop": {
                 "reward": {
@@ -357,7 +357,7 @@
         {
             "name": "Vampire",
             "life": 100,
-            "difficulty": 18,
+            "difficulty": 19,
             "avatar": "assets/images/vampire.png",
             "drop": {
                 "reward": {
@@ -373,7 +373,7 @@
         {
             "name": "Necromante",
             "life": 100,
-            "difficulty": 19,
+            "difficulty": 20,
             "avatar": "assets/images/necromante.png",
             "drop": {
                 "reward": {

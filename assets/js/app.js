@@ -53,8 +53,7 @@ new Vue({
             }
         },
         startGame() {
-            if(this.monster.life === 0 && 
-                (this.monster.difficulty === this.monsters.length)) {
+            if(this.monster.life === 0 && (this.monster.difficulty === this.monsters.length)) {
                 this.resetMonsters();
             }
             
@@ -63,7 +62,7 @@ new Vue({
             this.monster.life = 100;
             this.logs = [];
 
-            if(this.game.nextLevel) {
+            if(this.game.nextLevel && (this.game.level < this.monsters.length)) {
                 this.game.level++;
             }
 
@@ -103,7 +102,7 @@ new Vue({
 
             if((this.monster.life === 0) && (this.game.level < this.monsters.length)) {
                 this.game.nextLevel = true;
-            } else if((this.monster.life === 0) && (this.game.level === this.monsters.length)) {
+            } else if((this.monster.life === 0) && (this.game.level >= this.monsters.length)) {
                 this.game.nextLevel = false;
             } else if (this.player.life === 0) {
                 this.resetMonsters();

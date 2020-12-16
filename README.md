@@ -80,6 +80,31 @@ Ir para o [topo](#logo).
 
 Para visualizar o projeto basta acessar o [link do jogo](https://jmontejr.github.io/monster-slayer) ou assim que for realizado o clone do repositório, acessar a pasta onde o projeto foi baixado e abrir o arquivo `index.html` no seu navegador de costume.
 
+### 01- Menu
+<p align="center">
+    <img src="assets/images/01-menu.png" alt="menu" width="500px">
+</p>
+
+### 02- Tela inicial
+<p align="center">
+    <img src="assets/images/02-screen.png" alt="screen" width="500px">
+</p>
+
+### 03- Batalha
+<p align="center">
+    <img src="assets/images/03-fighting.png" alt="fighting" width="500px">
+</p>
+
+### 04- Tela de derrota
+<p align="center">
+    <img src="assets/images/04-lose.png" alt="lose" width="500px">
+</p>
+
+### 05- Vitória / Fim de Jogo
+<p align="center">
+    <img src="assets/images/05-endgame.png" alt="win" width="500px">
+</p>
+
 Ir para o [topo](#logo).
 
 ### Autor
