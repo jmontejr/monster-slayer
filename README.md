@@ -27,13 +27,16 @@
    * [Features Adicionadas](#features-adicionadas)
    * [Obtendo o projeto](#obtendo-o-projeto)
    * [Visualizando o projeto](#visualizando-o-projeto)
+   * [Melhorias sugeridas](#melhorias-sugeridas)
    * [Autor](#autor)
    
 <!--te-->
 
 ## Overview
 
-O "Matador de Monstros" é o Projeto #01 presente na Seção 4 do [Curso Vue JS 2 - O Guia Completo (incl. Vue Router & Vuex)](https://www.udemy.com/course/vue-js-completo/). O projeto foi desenvolvido utilizando o Vue.JS através de CDN.
+O "Matador de Monstros" é o Projeto #01, presente na Seção 4 do [Curso Vue JS 2 - O Guia Completo (incl. Vue Router & Vuex)](https://www.udemy.com/course/vue-js-completo/).  
+
+O projeto foi desenvolvido utilizando o Vue.JS através de CDN e tem como intenção oferecer um contato inicial com o Vue.JS, abrangendo todo o conteúdo visto durante as Seções 1, 2 e 3 do curso. Algumas melhorias foram adicionadas no projeto e estão descritas na seção [Features Adicionadas](#features-adicionadas) deste README. Também existem algumas possíveis melhorias que são citadas na seção [Melhorias sugeridas](#melhorias-sugeridas) que podem ser implementadas futuramente.
 
 Ir para o [topo](#logo).
 
@@ -107,6 +110,17 @@ Para visualizar o projeto basta acessar o [link do jogo](https://jmontejr.github
 
 Ir para o [topo](#logo).
 
+
+### Melhorias Sugeridas
+
+- Recriar o projeto usando o Vue CLI
+- Criar componentes de acordo com o que o projeto demanda
+- Criar opção para salvar o progresso do jogo de onde parou (uma sugestão é utilizar o localStorage)
+- Limitar o uso de ataques especiais e de cura
+- Criar uma função de Loja/Comércio onde o jogador poderá repor seus ataques especiais e poções de cura utilizando as moedas (coins) que adquiriu ao longo das batalhas
+
+
+Ir para o [topo](#logo).
 ### Autor
 
 <h2>José Monte</h2>
